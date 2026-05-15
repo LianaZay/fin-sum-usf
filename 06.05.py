@@ -1,9 +1,6 @@
 import tkinter as tk
 import tkinter.font as tkFont
 
-
-
-
 def definice_komponent():
     velky_font = tkFont.Font(family="Arail", size=30)
 
@@ -19,7 +16,6 @@ def definice_komponent():
     ent_2=tk.Entry(font=velky_font,textvariable=edit2_hodn)
     ent_2.grid(row=1,column=1)
 
-
     bt1 = tk.Button(text="Výpočet",font=velky_font,command=pocitani)
     bt1.grid(row=2,column=0)
 
@@ -28,7 +24,6 @@ def definice_komponent():
 
     lbl_vysl = tk.Label(text="xxxxxxx",font=velky_font,textvariable=vysl_hodn)
     lbl_vysl.grid(row=3, column=1)
-
 
 def pocitani():
     cs1=int(edit1_hodn.get())
